@@ -2,8 +2,8 @@
     <string name="app_name">World Government Summit</string>
 
     <!-- SPLASH -->
-    <string name="splash_text_button_login">LOGIN</string>
-    <string name="splash_text_button_guest">CONTINUE AS GUEST</string>
+    <string name="splash_text_button_login">تسجيل الدخول</string>
+    <string name="splash_text_button_guest">أكمل كزائر</string>
     <string name="splash_text_date">12 - 14 FEBRUARY</string>
     <string name="splash_text_main">WORLD \nGOVERNMENT \nSUMMIT</string>
     <string name="splash_text_main_year">2017</string>
