@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:background="@color/colorCyan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.slashmobility.loyaltio.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_normal"
+        android:paddingLeft="@dimen/margin_normal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:layout_width="@dimen/image_logo_width"
+        android:layout_height="@dimen/image_logo_height"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_bg_white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_user"
+        android:paddingLeft="@dimen/padding_big"
+        android:paddingRight="@dimen/padding_big"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/field_username"
+            android:hint="@string/login_hint_username"
+            android:paddingBottom="@dimen/button_padding_bottom"
+            android:drawableLeft="@drawable/user"
+            style="@style/Login.Control.EditText"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:id="@+id/field_password"
+            android:inputType="textPassword"
+            android:hint="@string/login_hint_password"
+            android:paddingBottom="@dimen/button_padding_bottom"
+            android:drawableLeft="@drawable/user"
+            style="@style/Login.Control.EditText"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/login_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_large_height"
+        android:id="@+id/button_login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorLightCyan"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

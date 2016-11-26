@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorWhite"
+    tools:context="com.slashmobility.loyaltio.activities.SplashActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/image_logo_width"
+            android:layout_height="@dimen/image_logo_height"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo_bg_blue" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textview_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/text_size_big"
+                android:lineSpacingExtra="@dimen/text_big_line_spacing"
+                android:layout_marginTop="@dimen/padding_small"
+                android:textColor="@color/colorCyan"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_text_date"
+                android:textAlignment="center"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_xnormal"
+                android:lineSpacingExtra="@dimen/text_big_line_spacing"
+                android:layout_marginTop="@dimen/padding_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.todddavies.components.progressbar.CircularProgressBar
+                android:id="@+id/circularprogressbardays"
+                style="@style/Widget.ProgressBar.CircularProgressBar"
+                android:layout_width="@dimen/image_count_down_width"
+                android:layout_height="@dimen/image_count_down_height"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <com.todddavies.components.progressbar.CircularProgressBar
+                android:id="@+id/circularprogressbarhours"
+                style="@style/Widget.ProgressBar.CircularProgressBar"
+                android:layout_width="@dimen/image_count_down_width"
+                android:layout_height="@dimen/image_count_down_height"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <com.todddavies.components.progressbar.CircularProgressBar
+                android:id="@+id/circularprogressbarminutes"
+                style="@style/Widget.ProgressBar.CircularProgressBar"
+                android:layout_width="@dimen/image_count_down_width"
+                android:layout_height="@dimen/image_count_down_height"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <com.todddavies.components.progressbar.CircularProgressBar
+                android:id="@+id/circularprogressbarseconds"
+                style="@style/Widget.ProgressBar.CircularProgressBar"
+                android:layout_width="@dimen/image_count_down_width"
+                android:layout_height="@dimen/image_count_down_height"
+                android:layout_marginTop="@dimen/margin_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/image_world_width"
+                android:layout_height="@dimen/image_world_height"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/world" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/splash_text_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_large_height"
+        android:id="@+id/btn_login"
+        android:background="@color/colorCyan"
+        android:textColor="@color/colorWhite"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/btn_guest"
+        />
+
+    <Button
+        android:text="@string/splash_text_button_guest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_large_height"
+        android:id="@+id/btn_guest"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGray"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

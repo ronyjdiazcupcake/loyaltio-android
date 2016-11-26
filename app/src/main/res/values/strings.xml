@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">World Government Summit</string>
+
+    <!-- SPLASH -->
+    <string name="splash_text_button_login">LOGIN</string>
+    <string name="splash_text_button_guest">CONTINUE AS GUEST</string>
+    <string name="splash_text_date">12 - 14 FEBRUARY</string>
+    <string name="splash_text_main">WORLD \nGOVERNMENT \nSUMMIT</string>
+    <string name="splash_text_main_year">2017</string>
+
+    <!-- LOGIN -->
+    <string name="login_hint_username">Username</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_button_text">LOGIN</string>
+</resources>
