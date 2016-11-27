@@ -51,7 +51,7 @@
             android:inputType="textPassword"
             android:hint="@string/login_hint_password"
             android:paddingBottom="@dimen/button_padding_bottom"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/ic_password"
             style="@style/Login.Control.EditText"
             android:background="@drawable/border"/>
 
